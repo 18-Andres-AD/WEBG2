@@ -45,9 +45,9 @@ li {
   object-fit: cover;
   position: sticky;
   top: 50%; 
-  left: 96%; /* distancia desde la izquierda */
-  z-index: 1000; /* para que esté encima de otros elementos */
-  cursor: pointer; /*  cambia el cursor */
+  left: 96%;
+  z-index: 1000;
+  cursor: pointer; 
 }
 footer {
   background-color: rgb(39, 179, 218);

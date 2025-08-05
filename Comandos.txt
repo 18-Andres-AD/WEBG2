@@ -1,0 +1,12 @@
+comando para forzar en main : 
+
+git pull origin main --rebase
+
+
+
+
+comando para cargar información: 
+
+git add .
+git commit -m "Entrega vista web"
+git push  origin main   

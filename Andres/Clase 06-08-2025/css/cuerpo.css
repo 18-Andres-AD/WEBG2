@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: blue;
+  margin-bottom: 30px;
+}
+h2 {
+  font-size: 1.5rem;
+  color: #2b6cb0;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 10px;
+}
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Primer contenido */
+
+.contenido-principal {
+  padding: clamp(30px, 5vw, 18vw);
+  height: 90vh;
+  background-color: #b6f7ff;
+}
+.contenido-texto {
+  margin-right: 40%;
+}
+
+/* Segundo Contenido (4 Cuadros) */
+
+.contenido-secundario {
+  display: flex;
+  height: 100vh;
+  width: 100vh;
+}
+.contenido-informacion1 {
+  background-color: #00d5ff;
+  padding: 20px;
+}
+.contenido-informacion2 {
+  background-color: #4eeaff;
+  padding: 20px;
+}
+.contenido-informacion3 {
+  background-color: #79fffb;
+  padding: 20px;
+}
+.contenido-informacion4 {
+  background-color: #adfeff;
+  padding: 20px;
+ }
+
+/* Tercer contenido */
+
+.contenido-terciario {
+  display: flex;
+  flex-direction: column;
+  background-color: #ccfffb;
+  padding: 20px;
+}
+
+.contenido-subtexto-terciario {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  margin: 5%;
+}
+
+.subtexto-imagen img {
+  max-width: 150px;
+}
+.contenido-subtexto-terciario .contenido-texto {
+  margin-right: 30%;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+
+@media (min-width: 479px) and (max-width: 1023px) {
+  .contenido-texto {
+    margin-right: 0;
+  }
+
+  .contenido-secundario {
+    width: 50vh;
+    height: 50vh;
+  }
+
+  .contenido-subtexto-terciario {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .subtexto-imagen img {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.primerbloque {
+  background-color: aquamarine;
+  height: 80px;
+}
+.logoMenu {
+  align-items: center;
+  float: right;
+  height: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+.logoUniversidad {
+  align-items: center;
+  float: left;
+  height: 50px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.primercontenido {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(39, 179, 218);
+}
+.segundotexto {
+  height: 50vh;
+}
+#segundotexto1 {
+  background-color: aqua;
+}
+#segundotexto2 {
+  background-color: aquamarine;
+}
+#segundotexto3 {
+  background-color: lightblue;
+}
+#segundotexto4 {
+  background-color: lightcyan;
+}
+.tercercontenido {
+  background-color: rgb(39, 179, 218);
+}
+.tercertexto {
+  height: 70vh;
+}
+.tercerimagen {
+  float: right;
+  background-color: red;
+}
+.footer {
+  background-color: rgb(68, 214, 255);
+  color: white;
+  text-align: center;
+  height: 90vh;
+  padding: 10px 0;
+}
+.regresar {
+  background-color: rgb(255, 255, 255);
+  height: 10vh;
+}
+
+@media (min-width: 479px) and (max-width: 1023px) {
+  .primercontenido {
+    height: 80vh;
+  }
+
+  .segundocontenido {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .segundotexto {
+    width: 50%;
+    height: 50vh;
+  }
+  .tercertexto {
+    height: 60vh;
+  }
+  .tercerimagen {
+    float: right;
+  }
+  .footer {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

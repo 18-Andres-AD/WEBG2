@@ -10,3 +10,15 @@ comando para cargar información:
 git add .
 git commit -m "Entrega vista web"
 git push  origin main   
+
+
+
+comando para conectar git 
+
+echo "# Entregable1" >> README.md
+git init
+git agrega README.md
+git commit -m "primera confirmación"
+rama git -M principal
+git remoto agregar origen https://github.com/18-Andres-AD/Entregable1.git
+git push -u origen principal

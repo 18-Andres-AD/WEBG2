@@ -1,3 +1,4 @@
+
 #container {
   width: 100vw;
   height: 100vh;
@@ -31,53 +32,22 @@ footer {
   grid-area: footer;
   background-color: purple;
 }
-#container {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  background-color: red;
-  grid-template-columns: 2fr 2fr 1fr;
-  grid-template-rows: 1fr 2fr 1fr;
-  grid-template-areas:
-    "header header header"
-    "section article aside"
-    "footer footer aside";
-}
-
-header {
-  grid-area: header;
-  background-color: blue;
-}
-section {
-  grid-area: section;
-  background-color: orange;
-}
-article {
-  grid-area: article;
-  background-color: green;
-}
-aside {
-  grid-area: aside;
-  background-color: rgb(81, 0, 128);
-}
-footer {
-  grid-area: footer;
-  background-color: purple;
+nav {
+  grid-area: nav;
+  background: lightgreen;
 }
 
 @media (max-width: 768px) {
   #container {
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-      "header aside"
-      "section section"
-      "article article"
-      "footer aside";
+      "header header nav"
+      "section section section"
+      "article article article"
+      "footer aside aside";
   }
 }
-
-
 
 @media (max-width: 480px) {
   #container {
